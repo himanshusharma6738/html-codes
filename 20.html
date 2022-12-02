@@ -1,0 +1,44 @@
+<!doctype html>
+<title>Example</title>
+<style>
+body {
+display: grid;
+grid-template-areas:
+"nav header header"
+"nav article ads"
+"nav footer ads";
+grid-template-rows: 50px 1fr 50px;
+grid-template-columns: 20% 2fr 15%;
+grid-gap: 10px;
+height: 80vh;
+margin: 20;
+}
+header,footer,article,nav,div{
+padding: 20px;
+background: gold;
+}
+#pageHeader {
+grid-area: header;
+}
+#pageFooter {
+grid-area: footer;
+}
+#mainArticle {
+grid-area: article;
+}
+#mainNav {
+grid-area: nav;
+}
+#siteAds {
+grid-area: ads;
+}
+</style>
+<body>
+<header id="pageHeader">Header</header>
+<article id="mainArticle">Article</article>
+<nav id="mainNav">Nav</nav>
+<div id="siteAds">Ads</div>
+<footer id="pageFooter">Footer</footer>
+</body>
+
+

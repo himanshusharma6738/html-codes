@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forms</title>
+<style>
+body{
+background-color: white;
+}
+label{
+font-weight: 100;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: black;
+}
+
+.container{
+background-color: black;
+padding:5px;
+color: white;
+border-radius: 5px;
+
+}
+
+form{
+background-color: green;
+padding: 20px;
+width: fit-content;
+border-radius: 20px;
+box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+position: absolute;
+top: 10%;
+right: 30%;
+}
+input{
+background-color: blue;
+padding: 2px;
+margin: 5px;
+
+}
+.button{
+margin-top: 10px;
+width: 50%;
+background-color: ;
+color: #080710;
+padding: 15px 0;
+font-size: 18px;
+font-weight: 600;
+border-radius: 5px;
+position: relative;
+left: 5vw;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/signup" method="post">
+<p>
+<label class="container">Title : </label>
+<label>
+
+<input type = "radio" name = "title" value="mr">
+Mr
+</label>
+<label>
+<input type="radio" name = "title" value = "mrs">
+Mrs
+</label>
+<label>
+<input type="radio" name = "title" value="miss">
+Miss
+</label>
+</p>
+
+
+<p>
+<label class="container">First Name</label><label>
+<input type = "text" placeholder="first_name">
+</label>
+
+
+</p>
+
+<p>
+<label class="container">last name</label>
+<input type = "text" placeholder="last_name">
+</p>
+
+<p>
+<label class="container">Email</label>
+<input type = "email" placeholder="email">
+</p>
+<p>
+<label class="container">Phonenumber</label>
+<input type = "tel" placeholder="phone">
+</p>
+<p>
+<label class="container">Password</label>
+<input type="password" placeholder="password">
+</p>
+
+<p>
+<label class="container">
+confirm password
+</label>
+<input type = "password" placeholder="password_comfirm">
+</p>
+<p>
+<label class="container">country</label>
+<select>
+<option>canada</option>
+<option>France</option>
+<option>Germany</option>
+<option>Italy</option>
+<option>japan</option>
+<option>Russia</option>
+<option>United Kingdom</option>
+<option>United States</option>
+</select>
+</p>
+<p>
+<label class="container">Language</label>
+<input type = "checkbox" name = "language" value="english" >I know english
+<input type = "checkbox" value = "french">I know french
+</p>
+<p>
+<label class="container">Additional Informations</label>
+<textarea maxlength = "100" rows = "5" cols = "30" placeholder="Enter here."></textarea>
+</p>
+
+<p>
+<label>
+<input type = "checkbox" value="terms">
+I agree to the <a href="/terms">Terms and conditions</a>
+</label>
+</p>
+<p>
+<input type="date">
+<input type="file">
+</p>
+<p>
+<input type="submit" value = "Submit" class="button">
+</p>
+</form>
+
+
+</body>
+</html>
+
